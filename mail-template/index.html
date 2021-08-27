@@ -8,6 +8,436 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Document</title>
+<style>
+  @font-face {
+  font-family: "Noto Sans";
+  src: url("../static/fonts/notosans-regular.woff2") format("woff2"),
+    url("../static/fonts/notosans-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../static/fonts/notosans-medium.woff2") format("woff2"),
+    url("../static/fonts/notosans-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../static/fonts/notosans-semibold.woff2") format("woff2"),
+    url("../static/fonts/notosans-semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../static/fonts/notosans-bold.woff2") format("woff2"),
+    url("../static/fonts/notosans-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ASSA Vesta";
+  src: url("../static/fonts/AAVESLGT.woff2") format("woff2"),
+    url("../static/fonts/AAVESLGT.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ASSA Vesta";
+  src: url("../static/fonts/AAVESREG.woff2") format("woff2"),
+    url("../static/fonts/AAVESREG.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ASSA Vesta";
+  src: url("../static/fonts/AAVESBOL.woff2") format("woff2"),
+    url("../static/fonts/AAVESBOL.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ASSA Vesta";
+  src: url("../static/fonts/AAVESITA.woff2") format("woff2"),
+    url("../static/fonts/AAVESITA.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ASSA Vesta";
+  src: url("../static/fonts/AAVESBIT.woff2") format("woff2"),
+    url("../static/fonts/AAVESBIT.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 8px 0;
+  color: #1a1a1a;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 40px;
+  color: #006616;
+}
+
+h5 {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+a {
+  color: #006616;
+}
+
+p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+hr {
+  max-width: 400px;
+  border-top: none;
+  border-color: #478c91;
+}
+
+/* ---------------------------------- */
+/* ---------- @BACKGROUNDS ---------- */
+/* ---------------------------------- */
+
+.bg-accent {
+  background-color: #006616;
+}
+
+.button-cta-1 {
+  background-color: #006616;
+  color: #fff;
+}
+
+.button-cta-2 {
+  background-color: #B2CFD1;
+  color: #000;
+}
+
+.button-cta-3 {
+  background-color: #000;
+  color: #fff;
+}
+
+.button-cta-4 {
+  background-color: #F0F0F0;
+  color: #000;
+}
+
+.bg-grey {
+  background-color: #F0F0F0;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-dark-grey {
+  background-color: #e8e8e8;
+}
+
+/* ---------------------------------- */
+/* ----------- @TEXT COLOR ---------- */
+/* ---------------------------------- */
+
+.color-white {
+  color: #fff;
+}
+
+.color-white img {
+  filter: invert(1);
+}
+
+.color-grey {
+  color: #484848;
+}
+
+.color-dark-grey {
+  color: #1a1a1a;
+}
+
+/* ---------------------------------- */
+/* ----- @GENERAL BULDING BLOCKS ---- */
+/* ---------------------------------- */
+
+#header {
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#header img {
+  display: block;
+  max-height: 20px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+#footer {
+  text-align: center;
+}
+
+#footer p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  padding: 0 18px;
+}
+
+#footer img {
+  max-width: 30px;
+  margin-top: 8px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 600px;
+  padding: 32px 32px 48px 32px;
+  margin: 0 auto;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  padding: 0 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  background: #d1d1d1;
+}
+
+.image {
+  width: 100%;
+}
+
+.eyebrow {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button {
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 8px;
+  display: inline-flex;
+}
+
+.button img {
+  margin-left: 8px;
+}
+
+a.button.with-arrow {
+  padding-left: 0;
+}
+
+
+.label {
+  position: absolute;
+  font-size: 11px;
+  line-height: 16px;
+  background-color: rgba(26, 26, 26, 0.8);
+  border-radius: 4px;
+  padding: 8px;
+  right: 12px;
+  bottom: 16px;
+  text-align: right;
+}
+
+.label p {
+  margin: 0;
+}
+
+/* ---------------------------------- */
+/* ----- @EDITORIAL COMPONENTS ------ */
+/* ---------------------------------- */
+
+/* Editorial 1 */
+
+
+/* Editorial 2 */
+.image-container {
+  position: relative;
+}
+
+.editorial-2 {
+  display: flex;
+}
+
+.editorial-2 h2 {
+  margin-top: 0;
+}
+
+.editorial-2 .image-container {
+  margin-right: 30px;
+}
+
+/* Editorial 2 (Reversed) */
+
+.editorial-2-reversed {
+  flex-direction: row-reverse;
+}
+.editorial-2-reversed .image-container {
+  margin-right: 0px;
+}
+
+.editorial-2 .content-container {
+  margin-right: 30px;
+}
+
+/* Editorial 3 */
+
+.editorial-3 {
+  text-align: center;
+}
+
+/* ---------------------------------- */
+/* -------- @CARD COMPONENTS -------- */
+/* ---------------------------------- */
+.card .button {
+  padding-left: 0;
+}
+
+.card {
+  background-color: #f4f4f4;
+}
+
+.bg-grey .card {
+  background-color: #fff;
+}
+/* Card section 1 */
+.card-section-1 .card {
+  display: flex;
+  padding: 16px;
+  margin-top: 16px;
+  border-radius: 4px;
+}
+
+.card-section-1 .card .image-container {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.card-section-1 .card .content-container {
+  flex: 2;
+}
+
+/*  Card section 2 */
+.card-section-2-container {
+  display: flex;
+}
+
+.card-section-2 .card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin-top: 16px;
+  border-radius: 4px;
+}
+
+.card-section-2-container .card:first-child {
+  margin-right: 16px;
+}
+
+.card-section-2 .card .image-container {
+  flex: 1;
+}
+
+.card-section-2 .card .content-container {
+  padding: 16px;
+  flex: 2;
+}
+
+/* ---------------------------------- */
+/* ------------ @UTILITY ------------ */
+/* ---------------------------------- */
+
+.bold {
+  font-weight: 700;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* ---------------------------------- */
+/* -------------- @MEDIA ------------ */
+/* ---------------------------------- */
+
+@media (max-width: 450px) {
+  .editorial-2 {
+    display: block;
+  }
+
+  .editorial-2 section {
+    margin-right: 0 !important;
+  }
+
+  .editorial-2 h2 {
+    margin-top: 8px;
+  }
+
+  .card-section-1 .eyebrow {
+    margin-top: 16px;
+  }
+
+  .card-section-1 .card,
+  .card-section-2-container {
+    flex-direction: column;
+  }
+
+  .card-section-2-container .card:first-child {
+    margin-right: 0px;
+  }
+}
+
+</style>
 </head>
 
 <body class="color-grey">
@@ -177,9 +607,9 @@
       <div class="divider"></div>
       <div class="social-media-icons">
         <img src="./static/img/linkedin.png" alt="social media icon for linkedin"/>
-        <img src="./static/img/facebook.png" alt="social media icon for facebook"/>
+        <a href="https://www.facebook.com/amarrgaragedoors"><img src="./static/img/facebook.png" alt="social media icon for facebook"/></a>
         <img src="./static/img/instagram.png" alt="social media icon for instagram"/>
-        <img src="./static/img/youtube.png" alt="social media icon for twitter"/>
+        <a href="https://www.youtube.com/amarrgaragedoors"><img src="./static/img/youtube.png" alt="social media icon for twitter"/></a>
       </div>
       <div class="divider"></div>
       <div>
