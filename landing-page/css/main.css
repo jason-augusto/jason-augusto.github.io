@@ -121,8 +121,8 @@
     2.25rem
   );
 
-  --font-family-heading: "ASSA Vesta";
-  --font-family-body: "Noto sans";
+  --font-family-heading: Arial, sans-serif;
+  --font-family-body: Arial, sans-serif;
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -223,11 +223,32 @@ p {
 /* ---------------------------------- */
 
 .bg-accent {
-  background-color: #00a0d0;
+  background-color: #006166;
 }
 
+.button-cta-1 {
+  background-color: #006166;
+  color: #fff;
+}
+
+.button-cta-2 {
+  background-color: #B2CFD1;
+  color: #000;
+}
+
+.button-cta-3 {
+  background-color: #000;
+  color: #fff;
+}
+
+.button-cta-4 {
+  background-color: #F0F0F0;
+  color: #000;
+}
+
+
 .bg-grey {
-  background-color: #f4f4f4;
+  background-color: #F0F0F0;
 }
 
 .bg-white {
@@ -396,7 +417,7 @@ flex: 1;
 }
 
 .hero__content__title {
-  display: inline 
+  display: inline
  }
 
 .hero__content__title,
@@ -435,7 +456,7 @@ flex: 1;
   .text-bg-wrapper {
     max-width:70%;
   }
-  
+
   .hero {
     height: 900px;
   }
@@ -567,7 +588,7 @@ flex: 1;
 
 /* Accent card */
 .card.accent-card {
-  background-color: #00a0d0;
+  background-color: #006166;
 }
 
 .card.accent-card a {
@@ -969,7 +990,7 @@ select:focus + .focus {
 .footer-link {
   position: relative;
   padding: 0 .75rem;
-  
+
 }
 
 .footer-link::after {
@@ -984,7 +1005,7 @@ select:focus + .focus {
   transform: translate(100%, -50%)
 }
 
-.footer-link:last-child::after { 
+.footer-link:last-child::after {
   display: none;
 }
 
@@ -1004,7 +1025,7 @@ select:focus + .focus {
   margin: 0;
 }
 
-.footer-bar a svg { 
+.footer-bar a svg {
   margin-left: 10px;
   position: relative;
   top: 3px;
@@ -1018,7 +1039,7 @@ select:focus + .focus {
   .footer-links a {
     display: block
   }
-  .footer-links, .social-media-icons { 
+  .footer-links, .social-media-icons {
     margin-bottom: 48px;
   }
 }
