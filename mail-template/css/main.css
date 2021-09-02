@@ -1,73 +1,5 @@
-@font-face {
-  font-family: "Noto Sans";
-  src: url("../static/fonts/notosans-regular.woff2") format("woff2"),
-    url("../static/fonts/notosans-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Noto Sans";
-  src: url("../static/fonts/notosans-medium.woff2") format("woff2"),
-    url("../static/fonts/notosans-medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Noto Sans";
-  src: url("../static/fonts/notosans-semibold.woff2") format("woff2"),
-    url("../static/fonts/notosans-semibold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Noto Sans";
-  src: url("../static/fonts/notosans-bold.woff2") format("woff2"),
-    url("../static/fonts/notosans-bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ASSA Vesta";
-  src: url("../static/fonts/AAVESLGT.woff2") format("woff2"),
-    url("../static/fonts/AAVESLGT.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ASSA Vesta";
-  src: url("../static/fonts/AAVESREG.woff2") format("woff2"),
-    url("../static/fonts/AAVESREG.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ASSA Vesta";
-  src: url("../static/fonts/AAVESBOL.woff2") format("woff2"),
-    url("../static/fonts/AAVESBOL.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ASSA Vesta";
-  src: url("../static/fonts/AAVESITA.woff2") format("woff2"),
-    url("../static/fonts/AAVESITA.woff") format("woff");
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "ASSA Vesta";
-  src: url("../static/fonts/AAVESBIT.woff2") format("woff2"),
-    url("../static/fonts/AAVESBIT.woff") format("woff");
-  font-weight: 700;
-  font-style: italic;
+html {
+  background: #e8e8e8;
 }
 
 body {
@@ -75,6 +7,14 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
+}
+
+ul {
+
+}
+
+li {
+  text-align: left;
 }
 
 h1,
@@ -90,8 +30,8 @@ h6 {
 
 h2 {
   font-weight: 300;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 22px;
+  line-height: 26px;
   color: #006166;
 }
 
@@ -225,6 +165,8 @@ p {
 
 #footer {
   text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 #footer p {
@@ -234,8 +176,14 @@ p {
   padding: 0 18px;
 }
 
-#footer p.small {
+.wrapper.post-footer {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.wrapper.post-footer p.small {
   font-size: 10px;
+  text-align: center;
 }
 
 #footer img {
@@ -254,7 +202,7 @@ p {
   width: 100%;
   box-sizing: border-box;
   max-width: 600px;
-  padding: 32px 32px 48px 32px;
+  padding: 15px 32px 15px 32px;
   margin: 0 auto;
 }
 
@@ -435,6 +383,10 @@ a.button.with-arrow {
 
 .underline {
   text-decoration: underline;
+}
+
+.align-right {
+  text-align: right;
 }
 
 /* ---------------------------------- */
