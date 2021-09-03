@@ -35,6 +35,11 @@ h2 {
   color: #006166;
 }
 
+h3 {
+  font-size: 17px;
+  font-weight: normal;
+}
+
 h5 {
   font-size: 17px;
   line-height: 22px;
